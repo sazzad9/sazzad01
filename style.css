@@ -1,0 +1,917 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700i");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+	box-sizing: content-box !important;
+}
+img {
+  width: 100%;
+}
+#clientSection,section#footer,#skillSection,#serviceSection,#resumeSection,div#aboutMeText{
+    max-width: 980px;
+    margin: 0 auto;
+}
+/*Startup from the mainSection which is important for sections sliding effect and which was collected from "practice-project_for_my_website"*/
+#first {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 4;
+}
+#second {
+  width: 39.4%;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  float: left;
+}
+#third {
+  width: 60.6%;
+  float: right;
+}
+#forth {
+  width: 60.6%;
+  float: right;
+}
+/*End of the mainSection*/
+/*starting of topSection*/
+#topSection {
+  background-image: linear-gradient(#00000035, #00000035),
+    linear-gradient(#00000035, #00000035), url(images/blue_light_lenses.jpg);
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: repeat;
+  background-origin: content-box;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-family: "Bebas Neue", cursive;
+}
+div#header {
+  width: 39.4%;
+  background: #191919;
+  height: 69px;
+  position: fixed;
+}
+#logo img {
+  width: 85%;
+  overflow: hidden;
+  margin-left: 11px;
+  cursor: pointer;
+}
+#navBatton i.fas.fa-bars {
+  color: white;
+  font-size: 35px;
+  padding: 0 17px;
+  cursor: pointer;
+}
+#navBatton:before {
+  content: "";
+  position: absolute;
+  background: #383838;
+  width: 2px;
+  height: 45px;
+  right: 62px;
+  top: 12px;
+}
+#logo #navBatton {
+  display: inline-block;
+}
+#logo {
+  width: 25%;
+  float: left;
+  background: #ffc815;
+  padding: 23px 19px;
+}
+#navBatton {
+  width: 64%;
+  float: right;
+  padding: 17px 0;
+  text-align: right;
+  position: relative;
+}
+#topSection h1 {
+  font-size: 94px;
+  letter-spacing: 2px;
+  color: white;
+  font-weight: 300;
+  margin: -12px 0;
+}
+#topSection h3 {
+  color: white;
+  font-weight: 300;
+  font-size: 27px;
+  letter-spacing: 3px;
+}
+#topSection #midText {
+  position: relative;
+  margin-left: 300px;
+  margin-top: 70px;
+}
+#topSection #midText:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 132px;
+  background: #ffc815;
+  top: 0px;
+  left: -28.5px;
+}
+/*End of topSection*/
+
+/*starting of aboutMeSection*/
+#aboutMe {
+  display: flex;
+  flex-direction: row;
+}
+#aboutMeImage {
+  background-image: linear-gradient(#00000035, #00000035),
+    linear-gradient(#00000035, #00000035), url(images/aboutMe.jpg);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: repeat;
+  background-origin: content-box;
+  height: 100vh;
+}
+div#aboutMeImage {
+  color: #ffc815;
+  font-family: arial;
+  font-weight: 600;
+  font-size: 1.87em;
+}
+div#aboutMeImage h1 {
+  margin-bottom: 2em;
+  position: relative;
+  margin-left: -3em;
+}
+div#aboutMeImage h1::after {
+  content: "";
+  position: absolute;
+  width: 0.15em;
+  height: 7em;
+  background: #ffffff87;
+  bottom: -25px;
+  left: -40px;
+}
+div#aboutMeImage h1:before {
+  content: "";
+  position: absolute;
+  width: 5em;
+  height: 0.15em;
+  background: #ffffff87;
+  bottom: -25px;
+  left: -31px;
+}
+#aboutMeImage img {
+  height: 100vh;
+  display: block;
+}
+#menuBar {
+  background: #191919;
+  width: 60.6%;
+  float: right;
+}
+#menuItems {
+  padding: 12px;
+}
+#menuItems ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+#menuItems ul a {
+  color: white;
+  text-decoration: none;
+  font-family: arial;
+}
+#menuItems ul li {
+  padding: 13px 23px;
+}
+#aboutList {
+  background: #ffc815;
+}
+div#aboutMeText {
+  padding: 30px;
+}
+button#aboutMeBtn {
+  border: none;
+  outline: none;
+  background: #ffc815;
+  padding: 10px 25px;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+}
+button#aboutMeBtn:after {
+  content: "";
+  position: absolute;
+  border-top: 13px solid #ffc815;
+  border-left: 12px solid transparent;
+  bottom: -13px;
+  right: 0;
+}
+#about h1 {
+  font-size: 50px;
+  font-family: arial;
+  margin-top: 20px;
+  position: relative;
+}
+#about h1:after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 2px;
+  bottom: -12px;
+  left: 0;
+  background: #ffc815;
+}
+#about h1:before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  bottom: -16px;
+  left: 0;
+  background: #ffc815;
+}
+#myInformation {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+#myInformation #myInfoImage {
+  flex: 1;
+  height: 300px;
+  overflow: hidden;
+  margin-top: 25px;
+  box-shadow: 10px 10px 40px grey;
+  transition: 1s;
+  cursor: pointer;
+}
+#myInformation #myInfoImage:hover {
+  box-shadow: none;
+}
+#myInformation #myInfoDetails {
+  flex: 2;
+  padding: 0 30px;
+}
+#myInfoDetails h3 {
+  color: #888;
+  font-family: cursive;
+  font-size: 1.5em;
+}
+#myInfoDetails h2 {
+  font-family: cursive;
+  padding: 0px 181px 0px 0px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+#myInfoDetails p {
+  font-family: cursive;
+  font-size: 13px;
+  margin-top: 10px;
+}
+button#myInfoDetailsBtn {
+  border: none;
+  outline: none;
+  background: #ffc815;
+  padding: 10px 20px;
+  font-size: 11px;
+  margin-top: 30px;
+}
+button#myInfoDetailsBtn a {
+  color: white;
+  text-decoration: none;
+}
+hr#horizontalLine {
+  margin: 0 150px;
+}
+div#aboutMeFact {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+}
+button#someFact {
+  border: none;
+  outline: none;
+  background: #ffc815;
+  padding: 15px 50px;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  position: relative;
+}
+button#someFact:after {
+  content: "";
+  position: absolute;
+  border-bottom: 20px solid #ffc815;
+  border-right: 23px solid #ffc81500;
+  bottom: 0;
+  right: -23px;
+}
+div#factCointer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+div#facts {
+  margin-left: 6em;
+}
+div#facts h1 {
+  font-size: 66px;
+  font-family: arial;
+}
+div#facts h6 {
+  font-family: arial;
+  color: #888;
+  text-align: center;
+}
+/*End of aboutMeSection*/
+div#hrDiv {
+  height: 0.08em;
+  background: #8888884a;
+  margin: 0 100px;
+}
+/*Starting of resumeSection*/
+#resumeSection {
+  padding: 30px;
+}
+button#resumeBtn {
+  border: none;
+  outline: none;
+  background: #ffc815;
+  padding: 10px 25px;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+}
+button#resumeBtn:after {
+  content: "";
+  position: absolute;
+  border-top: 13px solid #ffc815;
+  border-left: 12px solid transparent;
+  bottom: -13px;
+  right: 0;
+}
+#resume h1 {
+  font-size: 50px;
+  font-family: arial;
+  margin-top: 20px;
+  position: relative;
+}
+#resume h1:after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 2px;
+  bottom: -12px;
+  left: 0;
+  background: #ffc815;
+}
+#resume h1:before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  bottom: -16px;
+  left: 0;
+  background: #ffc815;
+}
+div#resumeCotainer {
+  margin: 60px 0;
+}
+div#resumes {
+  border-bottom: 0.5px solid #8888884a;
+}
+div#resumesItem {
+  padding: 30px 0 20px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: 0.5s;
+  cursor: pointer;
+  width: 600px;
+}
+div#resumesItem:hover {
+  transform: translate(2em);
+}
+#resumes i {
+  color: #fdc815;
+  font-size: 1.7em;
+}
+#resumes h2 {
+  color: #646464;
+  margin-left: 1em;
+  font-weight: 300;
+}
+div#resumeDescription {
+  margin: 1.5em 0 0 0;
+}
+#resumeDescription h3 {
+  color: #888;
+  font-family: arial;
+  font-weight: 300;
+  margin: 0.5em 0;
+}
+#resumeDescription ul {
+  display: flex;
+  flex-direction: row;
+  margin-left: 1em;
+}
+#resumeDescription ul li {
+  margin-right: 2em;
+  font-family: monospace;
+  font-size: 1.1em;
+  color: #888;
+}
+#resumeDescription p {
+  font-family: cursive;
+  color: #444;
+  margin-top: 1em;
+}
+/*End of resumeSection*/
+
+/*Starting of servicesSection*/
+#serviceSection {
+  padding: 30px;
+}
+button#serviceBtn {
+  border: none;
+  outline: none;
+  background: #ffc815;
+  padding: 10px 25px;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+}
+button#serviceBtn:after {
+  content: "";
+  position: absolute;
+  border-top: 13px solid #ffc815;
+  border-left: 12px solid transparent;
+  bottom: -13px;
+  right: 0;
+}
+#service h1 {
+  font-size: 50px;
+  font-family: arial;
+  margin-top: 20px;
+  position: relative;
+}
+#service h1:after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 2px;
+  bottom: -12px;
+  left: 0;
+  background: #ffc815;
+}
+#service h1:before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  bottom: -16px;
+  left: 0;
+  background: #ffc815;
+}
+#leftRight i.fas.fa-angle-right,
+#leftRight i.fas.fa-angle-left {
+  margin-left: 5px;
+}
+div#leftRight {
+  justify-content: flex-end;
+  display: flex;
+  margin: 60px 0 40px 0;
+}
+div#serviceContainer {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+div#services {
+  border: 1px solid #8888884a;
+}
+div.services2 {
+  margin: 0 10px;
+}
+div.services1 {
+  margin: 0 10px 0 0;
+}
+div.services3 {
+  margin: 0 0 0 10px;
+}
+#serviceImageContent {
+  height: 180px;
+  cursor: pointer;
+}
+#serviceImageContent:hover {
+  background: #00000050;
+}
+#serviceImage {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-origin: content-box;
+  height: 180px;
+}
+.serviceImage1 {
+  background-image: url(images/service_01.jpg);
+}
+.serviceImage2 {
+  background-image: url(images/service_02.jpg);
+}
+.serviceImage3 {
+  background-image: url(images/service_03.jpg);
+}
+#services h4 {
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 300;
+  color: #555;
+  margin: 13px 0;
+}
+#services p {
+  font-family: cursive;
+  color: #333;
+  font-size: 14px;
+  margin: 0 10px;
+  border-bottom: 1px dotted #888888a6;
+  padding-bottom: 30px;
+}
+div#services ul {
+  list-style-type: none;
+  margin: 10px 0 30px 0;
+}
+div#services ul li {
+  text-align: center;
+  padding: 10px 0;
+  font-family: sans-serif;
+  color: #6c6c6c;
+  font-size: 13px;
+}
+#services button {
+  padding: 8px 30px;
+  margin-top: 10px;
+  outline: none;
+  background: none;
+  color: #fdc815;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 2px solid #888;
+  cursor: pointer;
+  transition:0.5s;
+}
+  #services button:hover {
+  background: #000000;
+  }
+/*End of serviceSection*/
+
+/*Starting of skillSection*/
+#skillSection {
+  padding: 30px;
+}
+button#skillBtn {
+  border: none;
+  outline: none;
+  background: #ffc815;
+  padding: 10px 25px;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+}
+button#skillBtn:after {
+  content: "";
+  position: absolute;
+  border-top: 13px solid #ffc815;
+  border-left: 12px solid transparent;
+  bottom: -13px;
+  right: 0;
+}
+#skill h1 {
+  font-size: 50px;
+  font-family: arial;
+  margin-top: 20px;
+  position: relative;
+}
+#skill h1:after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 2px;
+  bottom: -12px;
+  left: 0;
+  background: #ffc815;
+}
+#skill h1:before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  bottom: -16px;
+  left: 0;
+  background: #ffc815;
+}
+.progressBar {
+    margin-bottom: 30px;
+    margin-top: 75px;
+}
+.progressBarItemsContainer {
+    margin-top: 55px;
+}
+/*End of skillSection*/
+
+/*Starting of clientSection*/
+#clientSection {
+  padding: 30px;
+}
+button#clientBtn {
+  border: none;
+  outline: none;
+  background: #ffc815;
+  padding: 10px 25px;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+}
+button#clientBtn:after {
+  content: "";
+  position: absolute;
+  border-top: 13px solid #ffc815;
+  border-left: 12px solid transparent;
+  bottom: -13px;
+  right: 0;
+}
+#client h1 {
+  font-size: 50px;
+  font-family: arial;
+  margin-top: 20px;
+  position: relative;
+}
+#client h1:after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 2px;
+  bottom: -12px;
+  left: 0;
+  background: #ffc815;
+}
+#client h1:before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  bottom: -16px;
+  left: 0;
+  background: #ffc815;
+}
+#clientInformation {
+  display: flex;
+  flex-direction: row;
+  margin: 50px 60px 80px 70px;
+  position: relative;
+}
+#clientInformation #clientImage {
+  overflow: hidden;
+}
+#clientInformation #clientDetails {
+  flex: 2;
+  padding: 0 30px;
+}
+#clientDetails h3 {
+  color: #333;
+  font-family: sans-serif;
+  font-size: 1em;
+}
+#clientDetails p {
+  font-family: cursive;
+  font-size: 13px;
+  margin-top: 10px;
+  position: relative;
+}
+button#clientDetailsBtn {
+  outline: none;
+  padding: 10px 20px 10px 0;
+  font-size: 15px;
+  margin-top: 30px;
+  border: none;
+  background: none;
+  font-family: auto;
+  position: relative;
+}
+button#clientDetailsBtn:after {
+  content: "";
+  position: absolute;
+  height: 0.1em;
+  width: 137px;
+  background: #000;
+  bottom: 0;
+  left: -5px;
+}
+button#clientDetailsBtn a {
+  color: #fdc815;
+  text-decoration: none;
+}
+div#clientInformation:before {
+  content: "";
+  position: absolute;
+  height: 3.5em;
+  width: 0.2em;
+  background: #fdc815;
+  bottom: -40px;
+  right: 0;
+}
+div#clientInformation:after {
+  content: "";
+  position: absolute;
+  height: 0.2em;
+  width: 3.5em;
+  background: #fdc815;
+  bottom: -40px;
+  right: 3px;
+}
+i.fas.fa-angle-left {
+  background: #fdc815;
+  color: white;
+  font-size: 25px;
+  padding: 8px 17px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#clientDetails i.fas.fa-angle-left {
+  position: absolute;
+  left: -225px;
+  top: 50%;
+}
+#clientDetails i.fas.fa-angle-right {
+  position: absolute;
+  right: -93px;
+  top: 50%;
+}
+i.fas.fa-angle-right {
+  background: #fdc815;
+  color: white;
+  font-size: 25px;
+  padding: 8px 17px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+i.fas.fa-angle-left:hover,
+i.fas.fa-angle-right:hover {
+  background: #000;
+}
+/*End of clientSection*/
+div#clientHr {
+  height: 0.08em;
+  background: #8888884a;
+  margin: 0 100px 20px 100px;
+}
+/*starting of footer section*/
+section#footer {
+  position: relative;
+}
+div#contectInfo {
+  padding: 35px;
+  background: #191919;
+}
+div#footerItemContainer {
+  display: flex;
+  flex-direction: row;
+}
+div#footerItem01 {
+  margin-right: 47px;
+}
+div#footerItem01 h2 {
+  color: white;
+  font-family: monospace;
+  font-size: 23px;
+  font-weight: 300;
+  margin-bottom: 50px;
+  position: relative;
+}
+div#footerItem01 h2:after {
+  content: "";
+  position: absolute;
+  bottom: -32%;
+  left: 0;
+  background: #fdc815;
+  width: 70px;
+  height: 3px;
+}
+#footerItem01 #links a {
+  color: black;
+  background: #fdc815;
+  padding: 10px;
+  border-radius: 30px;
+  margin-left: 3px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.3s;
+}
+i.fab.fa-facebook-f {
+  padding: 5px;
+}
+i.fab.fa-instagram,
+i.fab.fa-linkedin-in,
+i.fab.fa-whatsapp {
+  padding: 3px;
+}
+#footerItem01 #links a:hover {
+  color: #00000080;
+}
+#footerItem01 h4 {
+    padding: 2px 0;
+}
+h4 a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family:monospace;
+  font-size: 12px;
+  font-weight: 300;
+  transition:0.3s all;
+}
+h4 a:hover {
+	color:#ffffffa6;
+}
+i.fas.fa-phone-alt,
+i.fas.fa-map-marker-alt,
+i.far.fa-envelope {
+  color: #fdc815;
+  margin-right: 5px;
+  font-size: 12px;
+}
+ {
+  color: #fdc815b3;
+  margin-right: 5px;
+  font-size: 12px;
+}
+ {
+  color: #fdc815b3;
+  margin-right: 5px;
+  font-size: 12px;
+}
+div#copywrite {
+  padding: 40px 30px 40px 70px;
+  background: #000;
+  color: white;
+  font-size: 11px;
+  font-family: arial;
+  position: relative;
+}
+.numberToCount span {
+  color: #888;
+}
+#copywrite span{
+	color:#fdc815;
+}
+div#copywrite::before {
+  content: "";
+  position: absolute;
+  background: #fdc815;
+  width: 3px;
+  height: 4em;
+  top: 18px;
+  left: 34px;
+}
+div#copywrite:after {
+  content: "";
+  position: absolute;
+  background: #fdc815;
+  width: 4em;
+  height: 3px;
+  top: 18px;
+  left: 37px;
+}
+div#footerBtn {
+  padding: 25px 20px 21px 20px;
+  color: white;
+  background: #fdc815;
+  font-size: 18px;
+  float: right;
+  position: absolute;
+  bottom: 0;
+  right: 2%;
+  cursor: pointer;
+}
+div#footerBtn a{
+	color: white;
+}
+div#footerBtn a:hover {
+  color: black;
+}
+/*End of footer section*/

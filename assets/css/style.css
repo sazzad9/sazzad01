@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap');
+.single-progressbar .title {
+    font-size: 12px;
+	padding:2px 0;
+    font-weight: 600;
+    font-family: 'Lora', serif;
+    color: #888;
+}
+.card {
+    margin-bottom: 30px;
+}
+
+.card .card-header .title {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0;
+}
+
+.card .card-body code {
+    background-color: #efecec;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: 600;
+}
+.header .title::first-letter {
+    color: #fc4444;
+}
+
+.margin-top-60 {
+    margin-top: 60px;
+}

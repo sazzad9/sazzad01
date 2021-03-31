@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700i');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;1,300&display=swap");
+.circular-progress-bar {
+    position: relative;
+    margin: 0 auto;
+}
+.progress-percentage{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.progress-percentage {
+	font-size: 60px;
+    transform: translate(-50%, -50%);
+	color:#948d8d;
+}
+.barName{
+	width:300px;
+	position:relative;
+	margin: 0 auto;
+	color:#fdc815;
+	text-align:center;
+}

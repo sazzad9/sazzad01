@@ -1,0 +1,73 @@
+*{
+	margin:0;
+	padding:0;
+}
+.position {
+  margin: 25px 50px;
+}
+.progressBarItems {
+    display: flex;
+}
+.col-lg-12 {
+    width: 100%;
+	padding: 12px 50px;
+}
+.progress-bar {
+  position: relative;
+  height: 150px;
+  width: 150px;
+}
+.progress-bar div {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+.progress-bar .numberToCount {
+    position: absolute;
+    font-family: Arial;
+    line-height: 147px;
+    height: 138px;
+    width: 138px;
+    left: 6px;
+    top: 6px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: white;
+}
+.progress-bar .background { background-color: #b3cef6; }
+
+.progress-bar .rotate {
+  clip: rect(0 75px 150px 0);
+  background-color: #4b86db;
+}
+
+.progress-bar .left {
+  clip: rect(0 75px 150px 0);
+  opacity: 1;
+  background-color: #b3cef6;
+}
+
+.progress-bar .right {
+  clip: rect(0 75px 150px 0);
+  transform: rotate(180deg);
+  opacity: 0;
+  background-color: #4b86db;
+}
+ @keyframes 
+toggle {  0% {
+ opacity: 0;
+}
+ 100% {
+ opacity: 1;
+}
+}
+.circularBarName{
+	width: 150px;
+    margin: 0 auto;
+    color: #fdc815;
+    text-align: center;
+    font-family: 'Lora', serif;
+    margin-left: 50px;
+    margin-right: 50px;
+}
